@@ -1,12 +1,15 @@
 ### How to generate a casm json file?
 
+cairo compile version : 
+- https://github.com/starkware-libs/cairo/tree/v1.1.0
+
 ##  First 
 
-starknet-compile --single-file examples/storage_contract.cairo examples/storage_contract.sierra --replace-ids
+starknet-compile examples/storage_contract.cairo examples/storage_contract.sierra --replace-ids
 
 ## Second 
 
-starknet-sierra-compile -- examples/storage_contract.sierra examples/storage_contract.casm
+starknet-sierra-compile examples/storage_contract.sierra examples/storage_contract.casm
 
 
 # Reference
